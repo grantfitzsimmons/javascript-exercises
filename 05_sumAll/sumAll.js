@@ -3,7 +3,12 @@ const sumAll = function(min,max) {
     if (min < max) {
         for (min; min <= max; min++) {
             sum += min; 
-            console.log(min);
+        }
+        return sum;
+    }
+    else {
+        for (max; max <= min; max++) {
+            sum += max; 
         }
         return sum;
     }
